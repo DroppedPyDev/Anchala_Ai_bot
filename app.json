@@ -1,13 +1,13 @@
 {
-    "name": "Musicplayer_TG",
+    "name": "MusicPlayer_TG",
     "logo": "https://telegra.ph/file/9dd9b20abcda2d7bb6725.png",
-    "description": "Musicplayer_TG music allow you to stream music through the telegram video chat feature.",
+    "description": "MusicPlayer_TG music allow you to stream music through the telegram video chat feature.",
     "keywords": ["music", "voice chat", "telegram"],
-    "repository": "https://github.com/Abhijith-Sudhakaran/Musicplayer_TG",
+    "repository": "https://github.com/Abhijith-Sudhakaran/MusicPlayer_TG",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
-            "description": "fill with the pyrogram session string. Use @genStr_Bot ☺️",
+            "description": "fill with the pyrogram session string",
             "required": true
         },
         "BOT_TOKEN": {
@@ -20,7 +20,7 @@
             "value": ""
         },
         "OWNER_ID": {
-            "description": "your telegram id as the owner of the bot. Start @Geethu_Pro_bot ,type /id",
+            "description": "fill with your telegram id as the owner of the bot",
             "required": true,
             "value": ""
         },
@@ -75,6 +75,11 @@
         "UPSTREAM_REPO": {
             "description": "Fill it with Main Repo to Get your bot Uptodate",
             "required": false
+        },
+        "TIMEZONE" : {
+             "description": "Don't change if you live in India 🇮🇳",
+             "required": true,
+             "value": "Asis/Kolkata"
         },
         "HEROKU_API_KEY": {
              "description": "For Heroku logs",
