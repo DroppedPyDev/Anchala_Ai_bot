@@ -1,5 +1,4 @@
-# Copyright (C) 2021 By VeezMusicProject
-# I don't Remove the Copyright Bcz it's there efforts ☺️
+# Copyright (C) 2022 . Now it is Mine Code. Bcz i Studied Python 😝. © @Abhijith-Sudhakaran
 
 from __future__ import unicode_literals
 
@@ -9,6 +8,8 @@ import os
 import time
 from random import randint
 from urllib.parse import urlparse
+
+import lyricsgenius
 
 import aiofiles
 import aiohttp
@@ -268,18 +269,37 @@ async def vsong(client, message):
         print(e)
 
 
-@Client.on_message(command(["lyric", f"lyric@{bn}"]))
-async def lyrics(_, message):
-    try:
-        if len(message.command) < 2:
-            await message.reply_text("» **give a lyric name too.**")
-            return
-        query = message.text.split(None, 1)[1]
-        rep = await message.reply_text("🔎 Sᴇᴀʀᴄʜɪɴɢ ғᴏʀ Lʏʀɪᴄs ʏᴏᴜ Wᴀɴᴛ...")
-        resp = requests.get(
-            f"https://api-tede.herokuapp.com/api/lirik?l={query}"
-        ).json()
-        result = f"{resp['data']}"
-        await rep.edit(result)
-    except Exception:
-        await rep.edit("❌ σн-ѕиαρѕ🤧 , ℓуяι¢ѕ иσт fσυи∂! 🚫\n\n» ➡️ Gɪᴠᴇ Cᴏʀʀᴇᴄᴛ Sᴏɴɢ Tɪᴛʟᴇ!\n\n Aɢᴀɪɴ Eʀʀᴏʀ ᴏᴄᴄᴜʀʀᴇᴅ? Cᴏɴᴛᴀᴄᴛ [Cʀᴇᴀᴛᴏʀ](https://t.me/{own} ᴏʀ Asᴋ ɪɴ [Sᴜᴘᴘᴏʀᴛ](https://t.me/{sup})")
+# Function to generate lyrics of a song 
+
+
+
+@Client.on_message(command(["lyric", f"lyric@{bn}", "lyrics"]))
+async def get_lyric_genius(_, message: Message):
+    if len(message.command) < 2:
+        return await message.reply_text("**usage:**\n\n/lyrics (song name)")
+    m = await message.reply_text("🔍 Searching lyrics...")
+    query = message.text.split(None, 1)[1]
+    x = "OXaVabSRKQLqwpiYOn-E4Y7k3wj-TNdL5RfDPXlnXhCErbcqVvdCF-WnMR5TBctI"
+    y = lyricsgenius.Genius(x)
+    y.verbose = False
+    S = y.search_song(query, get_full_info=False)
+    if S is None:
+        return await m.edit("❌ `404` lyrics not found")
+    xxx = f"""
+**Song Name:** __{query}__
+**Artist Name:** {S.artist}
+**__Lyrics:__**
+{S.lyrics}"""
+    if len(xxx) > 4096:
+        await m.delete()
+        filename = "lyrics.txt"
+        with open(filename, "w+", encoding="utf8") as out_file:
+            out_file.write(str(xxx.strip()))
+        await message.reply_document(
+            document=filename,
+            caption=f"**OUTPUT:**\n\n`attached lyrics text`",
+            quote=False,
+        )
+        remove_if_exists(filename)
+    else:
+        await m.edit(xxx)
