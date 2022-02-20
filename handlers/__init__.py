@@ -1,3 +1,8 @@
-__version__ = "1.0.5"
+__version__ = "1.1.0"
 
-# Music Bot Repo 2 Version name is printed Above!
+# Fetch version = "14.0.2"
+# © https://github.com/Abhijith-Sudhakaran
+
+# Check 'https://bio.link/hypercat'
+
+# MusicPlayer_TG Version name is printed Above!
