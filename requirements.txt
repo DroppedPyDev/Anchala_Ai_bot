@@ -1,14 +1,14 @@
-tgcrypto
 git+https://github.com/pyrogram/pyrogram@master
-git+https://github.com/yt-dlp/yt-dlp@master
-youtube-search-python==1.4.9
+tgcrypto
+youtube-search
+yt-dlp # Moved from Youtube dld to yt-dlp. visit 'https://github.com/yt-dlp' for Any other information.
 py-tgcalls
 python-dotenv
+youtube-search-python
 requests
 aiohttp
 aiofiles
 asyncio
-youtube-search
 ffmpeg-python
 pillow
 future
@@ -18,3 +18,7 @@ motor
 dnspython
 heroku3
 gitpython
+telegraph # for telegra.ph file module
+apscheduler # for nightmode module
+lyricsgenius # for lyrics
+speedtest-cli # for speed test
