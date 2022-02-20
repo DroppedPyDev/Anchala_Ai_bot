@@ -319,3 +319,39 @@ async def delvar(client: Client, message: Message, app_):
         return
     await msg.edit(f"sucessfully deleted var `{_var}`")
     del heroku_var[_var]
+
+# get Active Chats
+
+Client.on_message(command(["calls", f"calls@{BOT_USERNAME}"]) & ~filters.edited)
+@sudo_users_only
+async def active_calls(c: Client, message: Message):
+    served_chats = []
+    try:
+        chats = await get_active_chats()
+        for chat in chats:
+            served_chats.append(int(chat["chat_id"]))
+    except Exception as e:
+        traceback.print_exc()
+        await message.reply_text(f"🚫 error: `{e}`")
+    text = ""
+    j = 0
+    for x in served_chats:
+        try:
+            title = (await c.get_chat(x)).title
+        except Exception:
+            title = "Private Group"
+        if (await c.get_chat(x)).username:
+            user = (await c.get_chat(x)).username
+            text += (
+                f"**{j + 1}.** [{title}](https://t.me/{user}) [`{x}`]\n"
+            )
+        else:
+            text += f"**{j + 1}.** {title} [`{x}`]\n"
+        j += 1
+    if not text:
+        await message.reply_text("❌ no active group calls")
+    else:
+        await message.reply_text(
+            f"✏️ **Running Group Call List:**\n\n{text}\n\n❖ This is the list of all current active group call in my database.",
+            disable_web_page_preview=True,
+        )
