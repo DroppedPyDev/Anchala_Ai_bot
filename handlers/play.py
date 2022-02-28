@@ -1,6 +1,4 @@
 # Playing Module © Abhijith-Sudhakaran
-# Thanks to @levina_lab . I just Modified some modules of His code♥️..
-# Don't remove these above lines when you Clone or Fork this Repository..
 
 import os
 from os import path
