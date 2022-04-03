@@ -515,10 +515,10 @@ async def play(_, message: Message):
     chid = message.chat.id
     try:
         user = await USER.get_me()
+        usar = user
+        wew = usar.id
     except:
-        user.first_name = "music assistant"
-    usar = user
-    wew = usar.id
+        user.first_name = "🦋♪⋆ Äαʍί ⋆♪ 🦋"
     try:
         await _.get_chat_member(chid, wew)
     except:
