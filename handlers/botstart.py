@@ -6,10 +6,10 @@ from config import (
     ALIVE_IMG,
     ALIVE_NAME,
     BOT_NAME,
+    BOT_USERNAME,
     GROUP_SUPPORT,
     OWNER_NAME,
     UPDATES_CHANNEL,
-    BOT_USERNAME,
 )
 from handlers import __version__
 from helpers.decorators import sudo_users_only
@@ -58,7 +58,8 @@ async def start_private(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🎵 Add Me", url=f"https://telegram.me/{BOT_USERNAME}?startgroup=true",
+                        "🎵 Add Me",
+                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
                 [InlineKeyboardButton("⚙️ Initial Setup", callback_data="cbhowtouse")],
@@ -149,3 +150,19 @@ async def get_uptime(client: Client, message: Message):
         f"• **start time:** `{START_TIME_ISO}`"
         f"• **Server:** Heroku"
     )
+
+ 
+@​Client​.​on_message​(​command​([​"repo"​, ​"source", "source_code"​]) ​&​ ​filters​.​group​ ​&​ ​~​filters​.​edited​) 
+ ​async​ ​def​ ​help​(​client​: ​Client​, ​message​: ​Message​): 
+ ​    ​await​ ​message​.​reply_photo​( 
+ ​        ​photo​=​f"https://te.legra.ph/file/fd3cfb88abe7831b2f5dd.jpg"​, 
+ ​        ​caption​=​f"""𝐇𝐞𝐲 𝐈 𝐚𝐦 𝐚𝐧 𝐎𝐩𝐞𝐧 𝐒𝐨𝐮𝐫𝐜𝐞 𝐁𝐨𝐭, 𝐌𝐲 𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞 𝐁𝐞𝐥𝐨𝐰. 𝐒𝐭𝐚𝐫 𝐚𝐧𝐝 𝐟𝐨𝐫𝐤 𝐢𝐟 𝐲𝐨𝐮 𝐧𝐞𝐞𝐝 ☺"""​, 
+ ​        ​reply_markup​=​InlineKeyboardMarkup​( 
+ ​            [ 
+ ​                [ 
+ ​                    ​InlineKeyboardButton​( 
+ ​                        ​" Source Code"​, ​url​=​f"https://github.com/Abhijith-Sudhakaran/MusicPlayer_TG"​) 
+ ​                ] 
+ ​            ] 
+ ​        ), 
+ ​    )
