@@ -9,7 +9,7 @@ from config import (
     GROUP_SUPPORT,
     OWNER_NAME,
     UPDATES_CHANNEL,
-    BOT_USERNAME as BU,
+    BOT_USERNAME,
 )
 from handlers import __version__
 from helpers.decorators import sudo_users_only
@@ -48,17 +48,17 @@ async def _human_time_duration(seconds):
 
 
 @Client.on_message(
-    command(["start", f"start@{BU}"]) & filters.private & ~filters.edited
+    command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
 )
 async def start_private(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **Welcome {message.from_user.mention()} !**\n
-💭 **I am [{BOT_NAME}](https://t.me/{BU})❤️ A RoBot for Music Playing and Downloading in Telegram!** """,
+💭 **I am [{BOT_NAME}](https://t.me/{BOT_USERNAME})❤️ A RoBot for Music Playing and Downloading in Telegram!** """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🎵 Add Me", url=f"https://telegram.me/{BU}?startgroup=true",
+                        "🎵 Add Me", url=f"https://telegram.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
                 [InlineKeyboardButton("⚙️ Initial Setup", callback_data="cbhowtouse")],
@@ -86,7 +86,7 @@ async def start_private(client: Client, message: Message):
 
 
 @Client.on_message(
-    command(["start", f"start@{BU}"]) & filters.group & ~filters.edited
+    command(["start", f"start@{BOT_USERNAME}"]) & filters.group & ~filters.edited
 )
 async def start_group(client: Client, message: Message):
     current_time = datetime.utcnow()
@@ -114,7 +114,7 @@ async def start_group(client: Client, message: Message):
 
 
 @Client.on_message(
-    command(["help", f"help@{BU}"]) & filters.group & ~filters.edited
+    command(["help", f"help@{BOT_USERNAME}"]) & filters.group & ~filters.edited
 )
 async def help(client: Client, message: Message):
     await message.reply_text(
@@ -129,7 +129,7 @@ async def help(client: Client, message: Message):
     )
 
 
-@Client.on_message(command(["ping", f"ping@{BU}"]) & ~filters.edited)
+@Client.on_message(command(["ping", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
 async def ping_pong(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("__pinging Network speed...__")
@@ -137,7 +137,7 @@ async def ping_pong(client: Client, message: Message):
     await m_reply.edit_text("🏓 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`\n"f"💻`Server : Heroku`\n\n"f"`Database : Mongodb`")
 
 
-@Client.on_message(command(["uptime", f"uptime@{BU}"]) & ~filters.edited)
+@Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
 @sudo_users_only
 async def get_uptime(client: Client, message: Message):
     current_time = datetime.utcnow()
