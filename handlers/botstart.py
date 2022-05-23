@@ -2,7 +2,6 @@ from datetime import datetime
 from sys import version_info
 from time import time
 
-from config import BOT_USERNAME as BU
 from config import (
     ALIVE_IMG,
     ALIVE_NAME,
@@ -10,6 +9,7 @@ from config import (
     GROUP_SUPPORT,
     OWNER_NAME,
     UPDATES_CHANNEL,
+    BOT_USERNAME as BU,
 )
 from handlers import __version__
 from helpers.decorators import sudo_users_only
