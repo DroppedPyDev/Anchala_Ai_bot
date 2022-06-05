@@ -150,5 +150,3 @@ async def get_uptime(client: Client, message: Message):
         f"• **start time:** `{START_TIME_ISO}`"
         f"• **Server:** Heroku"
     )
-
-# ending of module 
