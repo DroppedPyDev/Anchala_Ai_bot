@@ -151,18 +151,4 @@ async def get_uptime(client: Client, message: Message):
         f"• **Server:** Heroku"
     )
 
- 
-@​Client​.​on_message​(​command​([​"repo"​, ​"source", "source_code"​]) ​&​ ​filters​.​group​ ​&​ ​~​filters​.​edited​) 
- ​async​ ​def​ ​help​(​client​: ​Client​, ​message​: ​Message​): 
- ​    ​await​ ​message​.​reply_photo​( 
- ​        ​photo​=​f"https://te.legra.ph/file/fd3cfb88abe7831b2f5dd.jpg"​, 
- ​        ​caption​=​f"""𝐇𝐞𝐲 𝐈 𝐚𝐦 𝐚𝐧 𝐎𝐩𝐞𝐧 𝐒𝐨𝐮𝐫𝐜𝐞 𝐁𝐨𝐭, 𝐌𝐲 𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞 𝐁𝐞𝐥𝐨𝐰. 𝐒𝐭𝐚𝐫 𝐚𝐧𝐝 𝐟𝐨𝐫𝐤 𝐢𝐟 𝐲𝐨𝐮 𝐧𝐞𝐞𝐝 ☺"""​, 
- ​        ​reply_markup​=​InlineKeyboardMarkup​( 
- ​            [ 
- ​                [ 
- ​                    ​InlineKeyboardButton​( 
- ​                        ​" Source Code"​, ​url​=​f"https://github.com/Abhijith-Sudhakaran/MusicPlayer_TG"​) 
- ​                ] 
- ​            ] 
- ​        ), 
- ​    )
+
