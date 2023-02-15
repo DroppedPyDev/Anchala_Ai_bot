@@ -25,7 +25,7 @@ __micro__ = 1
 __python_version__ = f"{version_info[0]}.{version_info[1]}.{version_info[2]}"
 
 
-START_TIME = datetime.utcnow()
+START_TIME = datetime.now()
 START_TIME_ISO = START_TIME.replace(microsecond=0).isoformat()
 TIME_DURATION_UNITS = (
     ("week", 60 * 60 * 24 * 7),
