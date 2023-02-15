@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=yellow&color=green" /></a>
-    <a href="https://github.com/Abhijith-Sudhakaran/MusicPlayer_TG/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square" /></a>
+    <a href="https://github.com/Abhijith-Sudhakaran/MusicPlayer_TG/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-No-red.svg?style=flat-square" /></a>
     <a href="https://github.com/Abhijith-Sudhakaran/MusicPlayer_TG/commits/main"> <img src="https://img.shields.io/github/last-commit/Abhijith-Sudhakaran/MusicPlayer_TG?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
     <a href="https://github.com/Abhijith-Sudhakaran/MusicPlayer_TG/issues"> <img src="https://img.shields.io/github/issues/Abhijith-Sudhakaran/MusicPlayer_TG?color=red&logo=github&logoColor=blue&style=flat-square" /></a><br>
     <a href="https://github.com/Abhijith-Sudhakaran/MusicPlayer_TG/network/members"> <img src="https://img.shields.io/github/forks/Abhijith-Sudhakaran/MusicPlayer_TG?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
