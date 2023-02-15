@@ -1,6 +1,9 @@
+# Closed : Due to No Time to do this Update Shits 💩🚧
+
 # MusicPlayer_TG
 <b>Latest Open Source Code for Playing Music in Telegram Video Chat. Made with Pyrogram and Pytgcalls 💖
 </b>
+
 
 <p align="center">
     <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=yellow&color=green" /></a>
@@ -78,15 +81,12 @@
 ## 🔎 Inline Search Support
 - just type the bot username in any chat, example: "`@{Bot Username} Serach Query or Start the bot and touch inline button`", then bot will give you a results of the query you search in inline mode.
 
-## Heroku 🔃
-The easy way to host this bot, deploy to Heroku, Change the app country to Europe (For Stable Playback).
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Abhijith-Sudhakaran/MusicPlayer_TG)
+## Deployment 🔃
+• Deployment is not available, Removed Heroku support!
 
 ### Support & Updates 🎑
-<a href="https://t.me/{GROUP_SUPPORT}"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/{GROUP_SUPPORT}"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+• Support and Updates Not Available 🚧
 
 ### Future Updates's
-• Video Streaming Support. 
-
-.
+• Video Streaming Support - ×
+• All Updates Ended.
