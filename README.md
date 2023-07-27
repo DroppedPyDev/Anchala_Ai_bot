@@ -94,7 +94,7 @@ Dev : @Telecat_X [On Telegram]
 • Please wait for sometime, I'll try to give deployment function asap!
 
 ### Support & Updates 🎑
-• Telegram Chats - Coming Soon !
+<p align="center"><a href="https://telegram.dog/Telecat_X"> <img src="https://img.shields.io/badge/Connect me-blue?style=for-the-badge&logo=telegram" width="" height="40"/></a></p>
 
 ### Future Updates's
 • Nothing in mind 😹
