@@ -1,44 +1,53 @@
-# Closed : Due to No Time to do this Update Shits 💩🚧
+# ANCHALA AI BOT
+<b> Hey All I'm Anchala Ai Bot!<br>
 
-# MusicPlayer_TG
-<b>Latest Open Source Code for Playing Music in Telegram Video Chat. Made with Pyrogram and Pytgcalls 💖
-</b>
+🏴‍☠️ Old Name : MusicPlayer_TG
+
+An Open Source Telegram Bot Supports Music and Video Playing Feature and AI Features!
+
+Lets check our More abilities from Readme and more by using Me🥢
+
+Dev : @Telecat_X [On Telegram]
+</b></br>
 
 
 <p align="center">
     <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=yellow&color=green" /></a>
-    <a href="https://github.com/Abhijith-Sudhakaran/MusicPlayer_TG/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-No-red.svg?style=flat-square" /></a>
-    <a href="https://github.com/Abhijith-Sudhakaran/MusicPlayer_TG/commits/main"> <img src="https://img.shields.io/github/last-commit/Abhijith-Sudhakaran/MusicPlayer_TG?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
-    <a href="https://github.com/Abhijith-Sudhakaran/MusicPlayer_TG/issues"> <img src="https://img.shields.io/github/issues/Abhijith-Sudhakaran/MusicPlayer_TG?color=red&logo=github&logoColor=blue&style=flat-square" /></a><br>
-    <a href="https://github.com/Abhijith-Sudhakaran/MusicPlayer_TG/network/members"> <img src="https://img.shields.io/github/forks/Abhijith-Sudhakaran/MusicPlayer_TG?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
-    <a href="https://github.com/Abhijith-Sudhakaran/MusicPlayer_TG/network/members"> <img src="https://img.shields.io/github/stars/Abhijith-Sudhakaran/MusicPlayer_TG?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
+    <a href="https://github.com/Abhijith-Sudhakaran/Anchala_Ai_bot/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-Yes-green.svg?style=flat-square" /></a>
+    <a href="https://github.com/Abhijith-Sudhakaran/Anchala_Ai_bot/commits/main"> <img src="https://img.shields.io/github/last-commit/Abhijith-Sudhakaran/Anchala_Ai_bot?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
+    <a href="https://github.com/Abhijith-Sudhakaran/Anchala_Ai_bot/issues"> <img src="https://img.shields.io/github/issues/Abhijith-Sudhakaran/MusicPlayer_TG?color=red&logo=github&logoColor=blue&style=flat-square" /></a><br>
+    <a href="https://github.com/Abhijith-Sudhakaran/Anchala_Ai_bot/network/members"> <img src="https://img.shields.io/github/forks/Abhijith-Sudhakaran/Anchala_Ai_bot?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
+    <a href="https://github.com/Abhijith-Sudhakaran/Anchala_Ai_bot/network/members"> <img src="https://img.shields.io/github/stars/Abhijith-Sudhakaran/Anchala_Ai_bot?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
 </p>
 
 <h3>Requirements 📝</h3>
 
-- FFmpeg
+- FFmpeg Latest
 - NodeJS [nodesource.com](https://nodesource.com/)
 - Python 3.7 or higher
 - [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
 - [MongoDB](https://cloud.mongodb.com/)
 - [2nd Telegram Account](https://telegram.org/blog/themes-accounts#multiple-accounts) (needed for userbot)
-
+- Must Know something knowledge about Python Programming Language 🤭
 
 ## Features 🔮
 
-- 3x Downloading & Uploading Speed
-- Thumbnail Support
-- Playlist Support
-- Youtube, Local playback support (on beta)
-- Settings panel
-- Control with buttons
+- High Downloding & Uploading Speed
+- Interactive UI (Latest)
+- Playlist Supported
+- Youtube, Spotify, Local Audio Support
+- Admin Controls
+- Menu Tools Updated
 - Userbot auto join
-- Keyboard selection support for youtube play
-- Lyrics Scrapper (latest)
-- Unlimited Queue (on beta)
-- Broadcast Bot
-- Statistic Collector
+- Keyboard selection support for Streaming 
+- Lyrics Generation 
+- Unlimited Queue Support 
+- Broadcast to Active Chats
+- Bot Status Available 
 - Block / Unblock (restrict user for using your bot)
+- AI Features
+- Google Search
+- More Built-in Features 
 
 <h1> All Commands 🛠 </h1>
 
@@ -49,9 +58,9 @@
 - `/song <song name>` - download songs you want quickly
 - `/search <query>` - search videos on youtube with details
 - `/vsong <song name>` - download videos you want quickly
-- `/lyric <song name>` - lyrics scrapper
+- `/lyric <song name>` - lyrics Generated
 
-#### Admins Only 👷‍♂️
+#### Admins Settings on Chats 👷‍♂️
 - `/player` - open music player settings panel
 - `/pause` - pause song play
 - `/resume` - resume song play
@@ -82,11 +91,22 @@
 - just type the bot username in any chat, example: "`@{Bot Username} Serach Query or Start the bot and touch inline button`", then bot will give you a results of the query you search in inline mode.
 
 ## Deployment 🔃
-• Deployment is not available, Removed Heroku support!
+• Please wait for sometime, I'll try to give deployment function asap!
 
 ### Support & Updates 🎑
-• Support and Updates Not Available 🚧
+• Telegram Chats - Coming Soon !
 
 ### Future Updates's
-• Video Streaming Support - ×
-• All Updates Ended.
+• Nothing in mind 😹
+
+## Contributors 👥
+• Nobody Contributed in this Project 
+- Open Contribution Accepted
+
+## Credits & Thanks 💗
+- I Took this base code from Some old repositories, thanks to all the devolopers who coded the base codes💗.
+- Pyrogram repository Admin 💗
+- Name Credit - Anchala My Friend 😘
+- Thank to GOD 💗
+
+## Created with 💗 by HyperCoder🥢
