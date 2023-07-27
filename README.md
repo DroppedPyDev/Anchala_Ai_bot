@@ -17,7 +17,7 @@ Dev : @Telecat_X [On Telegram]
     <a href="https://github.com/Abhijith-Sudhakaran/Anchala_Ai_bot/commits/main"> <img src="https://img.shields.io/github/last-commit/Abhijith-Sudhakaran/Anchala_Ai_bot?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
     <a href="https://github.com/Abhijith-Sudhakaran/Anchala_Ai_bot/issues"> <img src="https://img.shields.io/github/issues/Abhijith-Sudhakaran/MusicPlayer_TG?color=red&logo=github&logoColor=blue&style=flat-square" /></a><br>
     <a href="https://github.com/Abhijith-Sudhakaran/Anchala_Ai_bot/network/members"> <img src="https://img.shields.io/github/forks/Abhijith-Sudhakaran/Anchala_Ai_bot?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
-    <a href="https://github.com/Abhijith-Sudhakaran/Anchala_Ai_bot/network/members"> <img src="https://img.shields.io/github/stars/Abhijith-Sudhakaran/Anchala_Ai_bot?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
+    <a href="https://github.com/Abhijith-Sudhakaran/nchala_Ai_bot/network/members"> <img src="https://img.shields.io/github/stars/Abhijith-Sudhakaran/Anchala_Ai_bot?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
 </p>
 
 <h3>Requirements 📝</h3>
