@@ -51,7 +51,7 @@ async def _human_time_duration(seconds):
 async def start_private(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **Welcome {message.from_user.mention()} !**\n
-💭 **I am [{BOT_NAME}](https://t.me/{BOT_USERNAME})❤️ A RoBot for Music Playing and Downloading in Telegram!** """,
+💭 **I am [{BOT_NAME}](https://t.me/{BOT_USERNAME})❤️ A Telegram Project working with Artificial Intelligence. With this bot You can Download, Ask anything and more stuffs.** """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -75,7 +75,7 @@ async def start_private(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/Abhijith-Sudhakaran/MusicPlayer_TG"
+                        "🌐 Source Code", url="https://github.com/Abhijith-Sudhakaran/Anchala_Ai_bot"
                     )
                 ],
             ]
@@ -133,7 +133,7 @@ async def ping_pong(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("__pinging Network speed...__")
     delta_ping = time() - start
-    await m_reply.edit_text("🏓 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`\n"f"💻`Server : Heroku`\n\n"f"`Database : Mongodb`")
+    await m_reply.edit_text("🏓 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`\n"f"💻`Server : VPS`\n\n"f"`Database : Mongodb`")
 
 
 @Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
@@ -146,5 +146,5 @@ async def get_uptime(client: Client, message: Message):
         "🤖 bot status:\n"
         f"• **uptime:** `{uptime}`\n"
         f"• **start time:** `{START_TIME_ISO}`"
-        f"• **Server:** Heroku"
+        f"• **Server:** VPS"
     )
